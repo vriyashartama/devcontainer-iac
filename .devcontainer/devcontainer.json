@@ -1,0 +1,16 @@
+{
+  "name": "Generic IaC Container",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  
+  "postStartCommand": "post-start",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "hashicorp.terraform"
+      ]
+    }
+  },
+  "remoteUser": "vscode"
+}
